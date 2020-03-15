@@ -1,0 +1,49 @@
+{
+    "name": "Trader Bot Dev Container",
+    "dockerComposeFile": [
+        "docker-compose.yml"
+    ],
+    // "remoteEnv": {
+    //     "SSH_FOLDER": "${localEnv:HOME}",
+    // },
+    "service": "dotnet",
+    "remoteUser": "vscode",
+    "workspaceFolder": "/workspace",
+    // Use 'settings' to set *default* container specific settings.json values on container create. 
+    // You can edit these settings after create using File > Preferences > Settings > Remote.
+    "settings": {
+        "terminal.integrated.shell.linux": "/usr/bin/pwsh",
+        "terminal.integrated.shellArgs.linux": [
+            "-l"
+        ],
+        "omnisharp.useGlobalMono": "never"
+    },
+    // Add the IDs of extensions you want installed when the container is created in the array below.
+    "extensions": [
+        "ms-dotnettools.csharp",
+        "jchannon.csharpextensions",
+        "streetsidesoftware.code-spell-checker",
+        "tombonnike.vscode-status-bar-format-toggle",
+        "eamodio.gitlens",
+        "christian-kohler.path-intellisense",
+        "ms-vscode.powershell",
+        "gruntfuggly.todo-tree",
+        "visualstudioexptteam.vscodeintellicode",
+        "dotjoshjohnson.xml",
+        "adrianwilczynski.asp-net-core-switcher",
+        "hbenl.vscode-test-explorer",
+        "leopotam.csharpfixformat",
+        "k--kato.docomment",
+        "fudge.auto-using",
+        "quicktype.quicktype",
+        "formulahendry.dotnet-test-explorer",
+        "wghats.vscode-nxunit-test-adapter",
+        "eriklynd.json-tools",
+        "mikeburgh.xml-format",
+        "formulahendry.code-runner",
+        "dennismaxjung.vscode-dotnet-auto-attach",
+        "xaver.clang-forma"
+    ],
+    "postCreateCommand": "dotnet restore",
+    "shutdownAction": "none"
+}
