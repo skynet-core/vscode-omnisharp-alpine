@@ -1,6 +1,6 @@
 # vscode-omnisharp-alpine
 
-## Ready-To-Used VSCode devcontainer configuration for enabling OmniSharp features work in Alpine Container
+## Ready-To-Use VSCode devcontainer configuration for enabling OmniSharp features work in Alpine Container
 
 ## How to use
 
